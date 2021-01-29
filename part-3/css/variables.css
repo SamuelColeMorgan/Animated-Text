@@ -1,0 +1,25 @@
+:root {
+    /* color variables */
+    --off-white: #fefefe;
+    --text-reveal-primary-color: #D9AB73;
+    --text-reveal-secondary-color: #400808;
+    /* -------------------- */
+
+    /* spacer variables */
+    --xs-space: 9px;
+    --small-space: 12px;
+    --medium-space: 18px;
+    --large-space: 21px;
+    /* -------------------- */
+
+    /* font variables */
+    --primary-font: 'Playfair Display', serif;
+    /* -------------------- */
+
+    /* size variables */
+    --large-header-font-size: 96px;
+    --medium-header-font-size: 75px;
+    --small-header-font-size: 60px;
+    --xs-header-font-size: 30px;
+    /* -------------------- */
+}

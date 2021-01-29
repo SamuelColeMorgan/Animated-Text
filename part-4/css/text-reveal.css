@@ -1,0 +1,111 @@
+.text-reveal-wrapper {
+	position: relative;
+}
+
+.text-reveal-wrapper hr {
+	animation: text-reveal-horizontal-rule-animation 1s ease;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+	border: 1px solid var(--text-reveal-primary-color);
+	margin: 0;
+}
+
+.text-reveal-wrapper .diamonds {
+	align-items: center;
+	background-color: var(--off-white);
+	display: flex;
+	padding: 0 var(--medium-space);
+	position: absolute;
+	transform: translate(-50%, -50%);
+	z-index: 100;
+}
+
+.text-reveal-wrapper .diamonds:nth-child(2) {
+	animation: top-text-reveal-diamonds-animation 1s ease;
+	left: 50%;
+	top: 0;
+}
+
+.text-reveal-wrapper .diamonds:nth-child(4) {
+	animation: bottom-text-reveal-diamonds-animation 1s ease;
+	left: 50%;
+	top: 100%;
+}
+
+.text-reveal-wrapper .diamond {
+	background-color: var(--text-reveal-secondary-color);
+	transform: rotate(45deg);
+}
+
+.text-reveal-wrapper .diamond:first-child,
+.text-reveal-wrapper .diamond:last-child {
+	height: var(--small-space);
+	position: relative;
+	width: var(--small-space);
+}
+
+.text-reveal-wrapper .diamond:first-child {
+	animation: left-text-reveal-diamond-animation 1s ease;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+}
+
+.text-reveal-wrapper .diamond:last-child {
+	animation: right-text-reveal-diamond-animation 1s ease;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+}
+
+.text-reveal-wrapper .diamond:nth-child(2) {
+	height: var(--large-space);
+	margin: 0 var(--small-space);
+	width: var(--large-space);
+}
+
+.text-reveal {
+	color: var(--text-reveal-primary-color);
+	font-family: var(--primary-font);
+	font-size: var(--large-header-font-size);
+	text-align: center;
+}
+
+/* media query for laptops */
+
+@media screen and (max-width: 1366px) {
+	.text-reveal {
+		font-size: var(--medium-header-font-size);
+	}
+}
+
+/* -------------------------------- */
+
+/* media query for tablets */
+
+@media screen and (max-width: 1112px) {
+	.text-reveal {
+		font-size: var(--small-header-font-size);
+	}
+}
+
+/* -------------------------------- */
+
+/* media query for phones */
+
+@media screen and (max-width: 767px) {
+	.text-reveal-wrapper .diamond:first-child,
+	.text-reveal-wrapper .diamond:last-child {
+		height: var(--xs-space);
+		width: var(--xs-space);
+	}
+
+	.text-reveal-wrapper .diamond:nth-child(2) {
+		height: var(--medium-space);
+		width: var(--medium-space);
+	}
+
+	.text-reveal {
+		font-size: var(--xs-header-font-size);
+	}
+}
+
+/* -------------------------------- */

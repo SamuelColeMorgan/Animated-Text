@@ -1,0 +1,64 @@
+/* animation for top text-reveal diamond container */
+
+@keyframes top-text-reveal-diamonds-animation {
+    0% {
+        top: -100vh;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+/* ----------------------------------------------- */
+
+/* animation for bottom text-reveal diamond container */
+
+@keyframes bottom-text-reveal-diamonds-animation {
+    0% {
+        top: 100vh;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+/* ----------------------------------------------- */
+
+/* animation for left text-reveal diamond */
+
+@keyframes left-text-reveal-diamond-animation {
+    0% {
+        left: calc(50% - 6px);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+/* ----------------------------------------------- */
+
+/* animation for right text-reveal diamond */
+
+@keyframes right-text-reveal-diamond-animation {
+    0% {
+        right: calc(50% - 6px);
+    }
+    100% {
+        right: 0;
+    }
+}
+
+/* ----------------------------------------------- */
+
+/* animation for text-reveal horizontal-rules */
+
+@keyframes text-reveal-horizontal-rule-animation {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+/* ----------------------------------------------- */

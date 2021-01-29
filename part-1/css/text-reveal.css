@@ -1,0 +1,50 @@
+.text-reveal-wrapper {
+	position: relative;
+}
+
+.text-reveal-wrapper hr {
+	border: 1px solid #fefefe;
+	margin: 0;
+}
+
+.text-reveal-wrapper .diamonds {
+	align-items: center;
+	background-color: navy;
+	display: flex;
+	padding: 0 18px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.text-reveal-wrapper .diamonds:nth-child(2) {
+	left: 50%;
+	top: 0;
+}
+
+.text-reveal-wrapper .diamonds:nth-child(4) {
+	left: 50%;
+	top: 100%;
+}
+
+.text-reveal-wrapper .diamond {
+	background-color: #fefefe;
+	transform: rotate(45deg);
+}
+
+.text-reveal-wrapper .diamond:first-child,
+.text-reveal-wrapper .diamond:last-child {
+	height: 12px;
+	width: 12px;
+}
+
+.text-reveal-wrapper .diamond:nth-child(2) {
+	height: 21px;
+	margin: 0 12px;
+	width: 21px;
+}
+
+.text-reveal {
+	color: #fefefe;
+	font-size: 96px;
+	text-align: center;
+}
