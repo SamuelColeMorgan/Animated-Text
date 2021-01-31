@@ -11,15 +11,15 @@ class AnimatedHeader {
     // initialize new instance of AnimatedHeader
 
     init() {
-        this.renderSplitText();
-        this.animateChildSpans();
+        this._renderSplitText();
+        this._animateChildSpans();
     }
 
     // -----------------------------------------
 
     // seperate header text into spans and render it
 
-    renderSplitText() {
+    _renderSplitText() {
         this.textContainer.innerText = '';
         let breakTagWasRendered = false;
         this.splitText.forEach((word, index) => {
@@ -40,7 +40,7 @@ class AnimatedHeader {
 
     // animate spans inside header
 
-    animateChildSpans() {
+    _animateChildSpans() {
         const downwardSpans = this.textContainer.querySelectorAll('.animate-down');
         const upwardSpans = this.textContainer.querySelectorAll('.animate-up');
         const allSpans = [...downwardSpans, ...upwardSpans];
